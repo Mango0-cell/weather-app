@@ -47,6 +47,7 @@ const getWeather = async (lat, lng) => {
         const WINDSPEED = data.current_weather.windspeed;
 
 
+        
         return data;
     } catch (error) {
         console.log(error);
