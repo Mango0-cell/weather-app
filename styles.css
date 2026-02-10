@@ -307,3 +307,80 @@ body .map-container {
     border-radius: 20px;
 }
 
+/* Dark Mode Styles */
+body.dark-mode {
+    color: #e0e0e0;
+}
+
+body.dark-mode header {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+}
+
+body.dark-mode main {
+    background-color: #2a2a3d;
+    transition: all 0.5s ease;
+
+}
+
+body.dark-mode .cards-container {
+    background-color: #1e1e2f;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+    transition: all 0.5s ease;
+
+}
+
+body.dark-mode .cards-container h2,
+body.dark-mode .cards-container h3 {
+    color: #e0e0e0;
+    transition: all 0.5s ease;
+
+}
+
+body.dark-mode .card {
+    background-color: #2a2a3d;
+    color: #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+
+    transition: all 0.5s ease;
+
+}
+
+body.dark-mode .cards .card:hover {
+    cursor: pointer;
+    color: #ffffff;
+}
+
+
+body.dark-mode .search-container input {
+    background-color: #2a2a3d;
+    border-color: #6a6a8e;
+    color: white;
+
+    transition: all 0.5s ease;
+
+}
+
+body.dark-mode .search-container input::placeholder {
+    color: #ffffff;
+    transition: all 0.5s ease;
+
+}
+
+body.dark-mode #dark-mode-toggle {
+    color: #ffd700;
+
+    transition: all 0.5s ease;
+}
+
+body.dark-mode .pac-container {
+    background-color: #2a2a3d;
+    border-color: #6a6a8e;
+}
+
+body.dark-mode .pac-item:hover {
+    background-color: #181b47;
+}
+
+body.dark-mode .pac-item-query {
+    color: #ffffff;
+}

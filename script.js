@@ -141,3 +141,14 @@ const getWeather = async (lat, lng) => {
         console.log(error);
     }
 };
+
+// Dark mode toggle
+const darkMode = document.getElementById('dark-mode-toggle');
+
+if (darkMode) {
+    darkMode.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        console.log('Dark mode toggled:', document.body.classList.contains('dark-mode'));
+    });
+}
+
