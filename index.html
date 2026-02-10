@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+
+
+
+<body>
+    <header>
+
+        <div class="logo-section">
+            <img class="logo" src="https://cdn-icons-png.flaticon.com/512/1116/1116453.png" alt="Weather App Logo">
+            <h1 class="app-title">Weather App</h1>
+        </div>
+
+        <section class="search-container">
+            <div class="search-inputs">
+
+                <input type="text" id="pac-input" placeholder="Enter city name">
+                <button class="search-icon" id="search-button">
+                    <span class="material-symbols-outlined">eye_tracking</span></button>
+            </div>
+        </section>
+
+        <span class="material-symbols-outlined" id="dark-mode-toggle">
+            dark_mode
+        </span>
+
+    </header>
+
+    <main>
+        <section class="cards-container">
+
+            <h2>hello!, Welcome to Wheather App =|</h2>
+
+            <h3>Search for any city to get the current weather information :D
+            </h3>
+
+            <div class="cards">
+                <div class="card">
+                    <h4>Temperature<span class="material-symbols-outlined">device_thermostat</span></h4>
+                    <p id="temperature">-- °C</p>
+                </div>
+                <div class="card">
+                    <h4>Description<span class="material-symbols-outlined">two_pager</span></h4>
+                    <p id="description">--</p>
+                </div>
+                <div class="card">
+                    <h4>Wind Direction<span id="wind-direction-icon" class="material-symbols-outlined">north_east </span></h4>
+                    <p id="wind-direction">--</p>
+                </div>
+                <div class="card">
+                    <h4>Wind Speed<span class="material-symbols-outlined">air</span></h4>
+                    <p id="wind-speed">-- km/h</p>
+                </div>
+            </div>
+
+            <img class="background" src="/assets/bubbles-6.jpg" alt="Background">
+
+        </section>
+
+        <section class="map-container">
+
+            <div id="map"></div>
+
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
