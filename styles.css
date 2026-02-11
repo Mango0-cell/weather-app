@@ -87,7 +87,7 @@ header .search-container input {
 }
 
 .pac-item {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 0.6rem;
 }
 
@@ -142,6 +142,7 @@ header .search-container button span {
 }
 
 main {
+    width: 100%;
     background-color: #e6fcf8;
     color: #45044c;
     display: grid;
@@ -248,6 +249,7 @@ body .cards .card:hover {
 body .cards h4 {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-top: 5px;
     font-family: 'Lucida Sans';
     margin-bottom: 10px;
@@ -262,7 +264,6 @@ body .cards p {
 
 .cards .material-symbols-outlined {
     font-size: 2.1rem;
-    margin-left: 45px;
     margin-top: 0;
 
     display: flex;
@@ -278,10 +279,6 @@ body .cards p {
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.6s ease;
-}
-
-.cards #wind-direction-icon {
-    margin-left: 90px;
 }
 
 
@@ -383,4 +380,78 @@ body.dark-mode .pac-item:hover {
 
 body.dark-mode .pac-item-query {
     color: #ffffff;
+}
+
+
+@media (max-width: 768px) {
+
+    header .logo-section {
+        width: 50px;
+    }
+
+    header .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    header .app-title {
+        font-size: 1rem;
+    }
+
+
+    header #dark-mode-toggle {
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+
+    header .search-container {
+        margin-left: 80px; 
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    body .cards-container {
+        top: 20px;
+        width: 75%;
+        height: 800px;
+        margin: 20px auto;
+        z-index: 1;
+        opacity: 0.99;
+        transform: perspective(1000px) rotateY(0deg);
+
+
+    }
+
+    body .cards {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    body .cards-container .card {
+        width: 100%;
+    }
+
+    body .cards-container .card h4 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    body .map-container {
+        width: 450px;
+        height: 200px;
+        margin: 20px auto;
+        z-index: 0;
+        transform: perspective(1000px) rotateY(0deg);
+        transition: all 0.5s ease;
+
+    }
+
+    body .map-container:hover {
+        transform: scale(1.1);
+        transition: all 0.5s ease;
+    }
+
 }
