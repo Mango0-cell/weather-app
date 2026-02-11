@@ -403,12 +403,17 @@ body.dark-mode .pac-item-query {
 
 
     header .search-inputs {
-        margin-left: 55px;
+        margin-left: 25px;
+        width: 110%;
     }
 
     header .search-container input {
         width: 100%;
         font-size: 1.05em;
+    }
+
+    header .search-container button {
+        display: none;
     }
 
     main {
